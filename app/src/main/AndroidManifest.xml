@@ -32,6 +32,11 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
+        <!-- Add an indication where to find the actions.xml -->
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
+
         <activity
             android:name="com.devrel.android.fitactions.FitMainActivity"
             android:exported="true"
@@ -87,10 +92,7 @@
 
         </provider>
 
-        <!-- Add an indication where to find the actions.xml -->
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@xml/actions" />
+
     </application>
 
 </manifest>

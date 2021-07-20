@@ -139,7 +139,7 @@ class FitMainActivity :
     private fun handleDeepLink(data: Uri?) {
         // path is normally used to indicate which view should be displayed
         // i.e https://fit-actions.firebaseapp.com/start?exerciseType="Running" -> path = "start"
-        var actionHandled = true
+//        var actionHandled = true
         when (data?.path) {
             DeepLink.STATS -> {
                 updateView(FitStatsFragment::class.java)
@@ -164,11 +164,11 @@ class FitMainActivity :
                 showDefaultView()
 
                 // Unknown or invalid action
-                actionHandled = false
+//                actionHandled = false
             }
         }
 
-        notifyActionSuccess(actionHandled)
+//        notifyActionSuccess(actionHandled)
     }
 
     /**
